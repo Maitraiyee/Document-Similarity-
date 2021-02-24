@@ -11,7 +11,7 @@ Cleansing of data for text mining and finding similarities between documents usi
 * [Instructions](#instructions)
 
 ## OBJECTIVE 
-Finding the closeness between document samples using basics of NLP. Implementing basics of text similarity on multiple files and presenting the analysis.
+Finding the similarity between document samples using basics of NLP. Implementing basics of text similarity on multiple files and presenting the analysis.
 
 ## TECHNOLOGIES
 Project is created with:
@@ -27,6 +27,8 @@ Project is created with:
 Samples given. Test check: 100% similarity for same document. High similarity between sample1 and sample2, low similarity between sample1 and sample3.
 
 ## IMPLEMENTATION
+
+Data cleaning: converted uppercase to lower case, removed characters other than alphabets, removed punctuations and stop words.
 
 **Cosine Similarity**: Cosine similarity measures the similarity between two vectors of an inner product space. It is measured by the cosine of the angle between two vectors and determines whether two vectors are pointing in roughly the same direction. Any document can be represented by thousands of attributes, each recording the frequency of a particular word (such as a keyword) or phrase in the document. Thus, each document is an object represented by what is called a term-frequency vector.
 I have tried implementing similar logic by using dictionary key:value pair as word as key and its frequency as value. if the key is same in two document samples, then multiply the values and add all of them to get the final dot product. Divide this summation by dot products of both the documnets to get the final percentage. 
