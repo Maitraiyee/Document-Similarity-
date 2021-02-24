@@ -1,3 +1,6 @@
+
+
+
 COPY all the above file into one single folder before running the python file.
 
 TO RUN PYTHON FILE LOCALY AND CHECK THE RESULT:
@@ -17,7 +20,7 @@ RUNNING DOCKER IMAGE LOCALLY:
 1. Build docker image : docker build -t flaskapp:version1 .
 2. Run the images : docker run -it -p 5000:5000 flaskapp:version1
 3. (Optional) Check if the container is running: sudo docker ps
-3. Open browser and hit http://localhost:5000/
+3. Open browser and hit http://localhost:5000/   or "0.0.0.0:5000" for linux/ubuntu.
 4. To stop the container: docker kill <container-id>
 
 
@@ -29,6 +32,7 @@ Pushing the image:
 2. Create a repository in dockerhub.
 3. Add a tag to the local docker image :  docker tag flaskapp:version1 maitraiyee/flaskapp:version1
 4. Push the image to dockerhub :  docker push maitraiyee/flaskapp:version1
+
 Fetching and Running the image:
 
 1. Pull the image : docker pull maitraiyee/flaskapp:version1
