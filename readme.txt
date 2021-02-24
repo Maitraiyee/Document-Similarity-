@@ -1,3 +1,5 @@
+COPY all the above file into one single folder before running the python file.
+
 TO RUN PYTHON FILE LOCALY AND CHECK THE RESULT:
 
 1. Run app.py with templates subfolder containing index.html file in the same project folder.
