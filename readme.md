@@ -23,13 +23,18 @@ Project is created with:
 ## ALGORITHMS
 * Cosine Similarity
 
+## DATA
+Samples given. Test check: 100% similarity for same document. High similarity between sample1 and sample2, low similarity between sample1 and sample3.
+
 ## IMPLEMENTATION
 
 **Cosine Similarity**: Cosine similarity measures the similarity between two vectors of an inner product space. It is measured by the cosine of the angle between two vectors and determines whether two vectors are pointing in roughly the same direction. Any document can be represented by thousands of attributes, each recording the frequency of a particular word (such as a keyword) or phrase in the document. Thus, each document is an object represented by what is called a term-frequency vector.
 I have tried implementing similar logic by using dictionary key:value pair as word as key and its frequency as value. if the key is same in two document samples, then multiply the values and add all of them to get the final dot product. Divide this summation by dot products of both the documnets to get the final percentage. 
 
 numerator = dotproduct(D1, D2)
+
 denominator = (dotproduct(D1, D1) * dotproduct(D2, D2)) ** (1 / 2)
+
 result = (numerator / denominator)*100
 
 ## Alternative Approach:
