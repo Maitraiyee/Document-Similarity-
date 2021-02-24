@@ -1,4 +1,4 @@
-# Finding-Similarities-between-the-textual-content-of-the-documents
+# Finding-Similarities-between-the-textual-content-of-the-document-samples
 Cleansing of data for text mining and finding similarities between documents using Jacard and cosine similarities. And computed similarity in two document samples.
 
 ### TABLE OF CONTENTS
