@@ -21,14 +21,27 @@ Project is created with:
 * Docker
 
 ## ALGORITHMS
-* Jacard Similarity 
 * Cosine Similarity
 
 ## IMPLEMENTATION
 
 **Cosine Similarity**: Cosine similarity measures the similarity between two vectors of an inner product space. It is measured by the cosine of the angle between two vectors and determines whether two vectors are pointing in roughly the same direction. Any document can be represented by thousands of attributes, each recording the frequency of a particular word (such as a keyword) or phrase in the document. Thus, each document is an object represented by what is called a term-frequency vector.
-I have tried implementing similar logic by using dictionary key:value pair as word as key and its frequency as value. if the key is same in two document samples, then multiply the values and add all of them to get the final dot product. Divide this summation by dot products of both the documnets to get the final percentage.  
+I have tried implementing similar logic by using dictionary key:value pair as word as key and its frequency as value. if the key is same in two document samples, then multiply the values and add all of them to get the final dot product. Divide this summation by dot products of both the documnets to get the final percentage. 
 
+numerator = dotproduct(D1, D2)
+denominator = (dotproduct(D1, D1) * dotproduct(D2, D2)) ** (1 / 2)
+result = (numerator / denominator)*100
+
+## Alternative Approach:
+Could have used Jaccard Similarity:
+
+**Jaccard Similarity**: The Jaccard similarity index (sometimes called the Jaccard similarity coefficient) compares members for two sets to see which members are shared and which are distinct. It’s a measure of similarity for the two sets of data, with a range from 0% to 100%. The higher the percentage, the more similar the two populations.
+
+How to calculate: The formula to find the Index is:
+
+Jaccard Index = (the number in both sets) / (the number in either set) * 100
+
+The same formula in notation is: J(X,Y) = |X∩Y| / |X∪Y|
 
 ## RESULTS
 
