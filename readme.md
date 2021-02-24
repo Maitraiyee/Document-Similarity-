@@ -1,3 +1,42 @@
+# Finding-Similarities-between-the-textual-content-of-the-documents
+Cleansing of data for text mining and finding similarities between documents using Jacard and cosine similarities. And computed similarity in two document samples.
+
+### TABLE OF CONTENTS
+* [Objective](#objective)
+* [Technologies](#technologies)
+* [Algorithms](#algorithms)
+* [Data](#data)
+* [Implementation](#implementation)
+* [Results](#results)
+* [Instructions](#instructions)
+
+## OBJECTIVE 
+Finding the closeness between document samples using basics of NLP. Implementing basics of text similarity on multiple files and presenting the analysis.
+
+## TECHNOLOGIES
+Project is created with:
+
+* Python
+* Flask API
+* Docker
+
+## ALGORITHMS
+* Jacard Similarity 
+* Cosine Similarity
+
+## IMPLEMENTATION
+
+**Cosine Similarity**: Cosine similarity measures the similarity between two vectors of an inner product space. It is measured by the cosine of the angle between two vectors and determines whether two vectors are pointing in roughly the same direction. Any document can be represented by thousands of attributes, each recording the frequency of a particular word (such as a keyword) or phrase in the document. Thus, each document is an object represented by what is called a term-frequency vector.
+I have tried implementing similar logic by using dictionary key:value pair as word as key and its frequency as value. if the key is same in two document samples, then multiply the values and add all of them to get the final dot product. Divide this summation by dot products of both the documnets to get the final percentage.  
+
+
+## RESULTS
+
+I have used python function to calculate the text similarity rather and deployed it as docker image using flask. The Docurhub repository is publicaly accessible and can be used by anyone to fetch and run the docker image (app) on their system
+
+## INSTRUCTIONS
+Follow the instructions to successfully run the created app:
+
 <b>COPY all the above file into one single folder before running the python
 file.</b>
 
