@@ -1,21 +1,22 @@
-COPY all the above file into one single folder before running the python
-file.
+<b>COPY all the above file into one single folder before running the python
+file.</b>
 
-TO RUN PYTHON FILE LOCALY AND CHECK THE RESULT:
+<b>TO RUN PYTHON FILE LOCALY AND CHECK THE RESULT:</b>
 
 1.  Run app.py with templates subfolder containing index.html file in
-    the same project folder. Document\_similarity --\>app.py, templates
+    the same project folder. 
+    Document\_similarity --\>app.py, templates
     -\>\> index.html
 2.  The link to run app locally on web browser is "0.0.0.0:5000" for
     linux/ubuntu. For windows, type "localhost:5000" on web browser to
     run the app.
 
-alternative:
+Alternative:
 
 1.  Run Document\_Similarity.py on windows and check the link in console
     to run the app.
 
-RUNNING DOCKER IMAGE LOCALLY:
+<b> RUNNING DOCKER IMAGE LOCALLY:</b>
 
 1.  Build docker image : docker build -t flaskapp:version1 .
 2.  Run the images : docker run -it -p 5000:5000 flaskapp:version1
@@ -24,7 +25,7 @@ RUNNING DOCKER IMAGE LOCALLY:
     linux/ubuntu.
 5.  To stop the container: docker kill <container-id>
 
-RUNNING DOCKER IMAGE FROM DOCKERHUB:
+<b>RUNNING DOCKER IMAGE FROM DOCKERHUB:</b>
 
 Pushing the image:
 
