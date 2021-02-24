@@ -18,6 +18,7 @@ Project is created with:
 
 * Python
 * Flask API
+* Windows PowerShell
 * Docker
 
 ## ALGORITHMS
@@ -56,6 +57,7 @@ I have used python function to calculate the text similarity rather and deployed
 
 ## INSTRUCTIONS
 Follow the instructions to successfully run the created app:
+These instructions are for Windows Powershell
 
 <b>COPY all the above file into one single folder before running the python
 file.</b>
